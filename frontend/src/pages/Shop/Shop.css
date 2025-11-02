@@ -1,0 +1,135 @@
+.section-container {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.section-header {
+  text-align: center;
+  margin: 130px 10px 0px 10px;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  color: #555;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.filter-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.products-count {
+  display: block;
+}
+
+.filters,
+.sort-menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sort-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.filter-btn,
+.sort-btn {
+  background: none;
+  border: 1px solid #ccc;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.filter-btn:hover,
+.sort-btn:hover {
+  background-color: #f4f4f4;
+}
+.filter-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.sort-dropdown {
+  position: absolute;
+  background: #fff;
+  border: 1px solid #ddd;
+  margin-top: 10rem;
+  list-style: none;
+  padding: 0.5rem 0;
+  z-index: 10;
+}
+
+.sort-dropdown li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.sort-dropdown li:hover {
+  background: #f0f0f0;
+}
+
+.products-section {
+  display: flex;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  width: 100%;
+  max-width: 1350px;
+}
+
+.filter-container {
+  width: 250px;
+  border-right: 1px solid #ddd;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  flex: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.no-results-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.no-results-image {
+  width: 300px;
+}
+
+@media (max-width: 768px) {
+  .filter-container {
+    width: 100%;
+    border: none;
+  }
+
+  .products-section {
+    flex-direction: column;
+  }
+  .products-count {
+    display: none;
+  }
+}
